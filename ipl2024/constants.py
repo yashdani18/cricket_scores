@@ -72,3 +72,64 @@ DICTIONARY_TEAMS = {
 # }
 
 IPL_START_DATE = '2024-03-22'
+
+INNING = 'inning'
+PLAYER_ID = 'player_id'
+
+BATTING_SUMMARY = 'batting_summary'
+BATSMEN = 'batsmen'
+BATSMAN_NAME = 'batsman_name'
+BATSMAN_LINK = 'batsman_link'
+BATTING_POSITION = 'batting_position'
+BATSMAN_DISMISSAL = 'batsman_dismissal'
+BATSMAN_RUNS = 'batsman_runs'
+BATSMAN_BALLS = 'batsman_balls'
+BATSMAN_FOURS = 'batsman_fours'
+BATSMAN_SIXES = 'batsman_sixes'
+BATSMAN_STRIKE_RATE = 'batsman_strike_rate'
+
+DISMISSAL_TYPE = 'dismissal_type'
+DISMISSAL_BOWLER = 'dismissal_bowler'
+DISMISSAL_CAUGHT = 'dismissal_caught'
+DISMISSAL_STUMP = 'dismissal_stump'
+DISMISSAL_RUN_OUT = 'dismissal_run_out'
+
+EXTRAS_KEY = 'extras'
+EXTRAS_TOTAL = 'extras_total'
+EXTRAS_DESC = 'extras_desc'
+EXTRAS_B = 'extras_b'
+EXTRAS_LB = 'extras_lb'
+EXTRAS_W = 'extras_w'
+EXTRAS_NB = 'extras_nb'
+EXTRAS_P = 'extras_p'
+
+TOTAL_KEY = 'total'
+TOTAL_VALUE = 'total_value'
+TOTAL_DESC = 'total_desc'
+
+BOWLERS = 'bowlers'
+BOWLER_NAME = 'bowler_name'
+BOWLER_LINK = 'bowler_link'
+BOWLING_POSITION = 'bowling_position'
+BOWLER_OVERS = 'bowler_overs'
+BOWLER_MAIDEN = 'bowler_maiden'
+BOWLER_RUNS = 'bowler_runs'
+BOWLER_WICKETS = 'bowler_wickets'
+BOWLER_NB = 'bowler_nb'
+BOWLER_WB = 'bowler_wb'
+BOWLER_ECONOMY = 'bowler_economy'
+
+# etl_score_alert
+TEAM = 'team'
+RUNS = 'runs'
+WICKETS = 'wickets'
+OVERS = 'overs'
+CRR = 'crr'
+RRR = 'rrr'
+
+POWERPLAY_OVER_LIMIT = 6
+AGGRESSIVE_BATTING_CRR = 10
+CHASE_LB = 10
+CHASE_UB = 16
+CHASE_WICKET_LIMIT = 5
+CHASE_MIN_OVER_VAL = 15

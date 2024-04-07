@@ -9,7 +9,7 @@ import pandas as pd
 
 import mysql.connector
 
-# from prefect import flow, task
+from prefect import flow, task
 
 from config.mysql import HOST, USER, PASSWORD, DATABASE
 
@@ -142,7 +142,7 @@ def load():
     arr_matches = df.to_dict('records')
     for index, match in enumerate(arr_matches):
         # print(type(match[WINNER]), match[WINNER])
-        sql = f'INSERT INTO schedule_result({TEAM1}, {TEAM2}, {MATCH_NUMBER}, {STADIUM}, {CITY}, {WINNER}, {LINK}, ' \
+        sql = f'INSERT INTO tbl_schedule({TEAM1}, {TEAM2}, {MATCH_NUMBER}, {STADIUM}, {CITY}, {WINNER}, {LINK}, ' \
               f'{MATCH_DATETIME}, {MATCH_DATE}, {MATCH_TIME}, {TIMESTAMP}) ' \
               f'VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)'
         val = (DICTIONARY_TEAMS.get(match[TEAM1]), DICTIONARY_TEAMS.get(match[TEAM2]), match[MATCH_NUMBER],
